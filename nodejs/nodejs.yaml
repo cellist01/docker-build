@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: nodejs
+  name: nodejs
+spec:
+  containers:
+  - image: cellist01/nodejs:viewip
+    name: nodejs-container
+    imagePullPolicy: Always
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+status: {}

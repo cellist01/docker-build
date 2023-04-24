@@ -1,0 +1,5 @@
+FROM dbgurum/k8s-lab:initial
+
+EXPOSE 80
+
+CMD ["httpd", "-D", "FOREGROUND;"]

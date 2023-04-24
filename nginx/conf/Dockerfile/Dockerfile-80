@@ -1,0 +1,6 @@
+FROM nginx
+
+COPY ./conf-port-80/default.conf /etc/nginx/conf.d/
+COPY ./conf-port-80/index.html /usr/share/nginx/html/
+
+CMD ["nginx", "-g", "daemon off;"]
